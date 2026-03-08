@@ -1,0 +1,10 @@
+Datasets/
+Outputs/
+Sandbox/
+
+__pycache__/
+*.py[cod]
+*~
+
+venv/
+.env
