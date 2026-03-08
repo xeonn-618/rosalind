@@ -13,7 +13,7 @@ def translate(rna:str) -> str:
         i+=3
     return polypeptide
 
-def uniprotget(uniprot_id:str,only_string=True) -> str:
+def uniprotget(uniprot_id:str,only_string=True) -> str | None:
     '''Returns the string data of a uniprot id in fasta format.
     only_string returns the entire data, setting it to false will only return the
     protein string part.'''
@@ -30,3 +30,4 @@ def uniprotget(uniprot_id:str,only_string=True) -> str:
         return data
     else:
         print(f"Request failed with status code: {response.status_code}")
+        
